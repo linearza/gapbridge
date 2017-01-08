@@ -564,6 +564,12 @@ form .is-hidden {
   }
 }
 
+.accordion .accordion-item {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
 .accordion .accordion-item .accordion-heading {
   padding: 40px 0px;
   font-size: 24px;
@@ -721,7 +727,7 @@ form .is-hidden {
   position: relative;
 }
 .main .content.intro .wrap h1 {
-  margin-top: 15px;
+  padding-top: 15px;
   margin-bottom: 40px;
   color: #4d4d4d;
   max-width: 800px;
