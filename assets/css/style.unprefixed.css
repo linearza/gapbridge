@@ -469,13 +469,124 @@ html {
 }
 
 body {
-  font: 300 13px/1.6 'Helvetica Neue', Helvetica, Arial;
-  background: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
   color: #444;
+}
+
+h1, h2, h3, h4, .logo .title {
+  font-family: 'Cantata One', serif;
+}
+
+.wrap {
+  max-width: 1147px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 800;
+  color: inherit;
+  display: inline-block;
+  border-bottom: 1px dashed;
+}
+a:hover, a:active {
+  font-weight: 300;
+  border-bottom: 1px solid;
+}
+
+h1, h2, h3, h4 {
+  margin-bottom: 5px;
+}
+
+p {
+  margin-top: 0;
+  line-height: 1.5em;
+}
+
+.logo svg {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 50px;
+  max-height: 50px;
+}
+.logo .title {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 20px;
+  color: #6892C7;
+}
+.logo .title i {
+  font-style: normal;
+  color: #436DA0;
+}
+
+.header {
+  background: #ffffff;
+  border-bottom: 1px solid #d5d5d5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.header .logo {
+  display: inline-block;
+}
+.header .contact-links {
+  display: inline-block;
+  width: calc(100% - 169px);
+  text-align: right;
+}
+.header .contact-links .link {
+  display: inline-block;
+  padding: 16px 0;
+  vertical-align: middle;
+  border: 0;
+}
+.header .contact-links .link i {
+  display: none;
+  font-style: normal;
+}
+@media only screen and (min-width: 768px) {
+  .header .contact-links .link i {
+    display: inline;
+  }
 }
 
 .nav ul {
   list-style: none;
+}
+
+.content {
+  padding: 20px 0;
+}
+.main .content:first-child {
+  margin-top: 51px;
+}
+.main .content:nth-child(2) {
+  background: #EF4747;
+  color: #ffffff;
+}
+.main .content:nth-child(4) {
+  background: #FFAF00;
+  color: #ffffff;
+}
+.main .content:nth-child(6) {
+  background: #06AC06;
+  color: #ffffff;
+}
+
+.footer {
+  background: #436DA0;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 20px 0 0;
+}
+.footer .copyright {
+  background: #253c58;
+  padding: 10px;
+  font-size: 10px;
 }
 
 /*# sourceMappingURL=style.unprefixed.css.map */
