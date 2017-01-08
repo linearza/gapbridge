@@ -516,6 +516,7 @@ p {
   display: inline-block;
   vertical-align: middle;
   font-size: 20px;
+  font-weight: 700;
   color: #6892C7;
   position: relative;
   top: 3px;
@@ -562,6 +563,100 @@ form .is-hidden {
   }
 }
 
+.accordion .accordion-item .accordion-heading {
+  padding: 40px 0px;
+  font-size: 24px;
+  font-weight: 300;
+  border-bottom: 1px solid #ffffff;
+  cursor: pointer;
+  position: relative;
+}
+.accordion .accordion-item .accordion-heading .accordion-heading-icon {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -20px;
+  fill: #ffffff;
+  transition: transform 100ms linear;
+}
+.accordion .accordion-item .accordion-heading:hover, .accordion .accordion-item .accordion-heading :active {
+  color: #ffffff;
+  opacity: 0.8;
+}
+.accordion .accordion-item .accordion-heading:hover .accordion-heading-icon, .accordion .accordion-item .accordion-heading :active .accordion-heading-icon {
+  fill: #888;
+}
+.accordion .accordion-item .accordion-heading:before, .accordion .accordion-item .accordion-heading:after {
+  content: '';
+  height: 2px;
+  width: 40px;
+  background: #ffffff;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+.accordion .accordion-item .accordion-heading:after {
+  transform: rotate(90deg);
+  transition: transform 100ms linear;
+}
+.accordion .accordion-item .accordion-content {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 100ms;
+}
+.accordion .accordion-item .accordion-content .accordion-content-wrap {
+  opacity: 0;
+  transition: transform 100ms linear, opacity 100ms linear;
+  transform: translate3d(0px, -20px, 0px);
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: 30px;
+}
+.accordion .accordion-item .accordion-content .accordion-content-wrap .section {
+  padding-top: 50px;
+  padding-bottom: 0;
+}
+.accordion .accordion-item.is-open .accordion-heading {
+  border-bottom: 0;
+}
+.accordion .accordion-item.is-open .accordion-heading .accordion-heading-icon {
+  transform: rotate(45deg);
+}
+.accordion .accordion-item.is-open .accordion-heading:after {
+  transform: rotate(0deg);
+}
+.accordion .accordion-item.is-open .accordion-content {
+  max-height: 100%;
+}
+.accordion .accordion-item.is-open .accordion-content .accordion-content-wrap {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+  transition: transform 100ms linear, opacity 100ms linear;
+}
+.accordion.borders-top .accordion-item .accordion-heading {
+  border-top: 1px solid #ffffff;
+  border-bottom: 0;
+}
+.accordion.borders-top .accordion-item .accordion-content .accordion-content-wrap {
+  padding-bottom: 40px;
+}
+.accordion.no-first-border .accordion-item:first-child .accordion-heading {
+  border-top: 0;
+}
+.accordion.no-last-border .accordion-item:last-child .accordion-heading {
+  border-bottom: 0;
+}
+.accordion.no-last-border .accordion-item:last-child .accordion-content .accordion-content-wrap {
+  border: 0;
+}
+@media only screen and (min-width: 768px) {
+  .accordion .accordion-item .accordion-heading .accordion-heading-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 .header {
   background: #ffffff;
   border-bottom: 1px solid #d5d5d5;
@@ -569,6 +664,7 @@ form .is-hidden {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1000;
 }
 .header .logo {
   display: inline-block;
@@ -607,14 +703,28 @@ form .is-hidden {
 }
 .main .content.intro {
   text-align: center;
+  position: relative;
 }
-.main .content.intro h1 {
+.main .content.intro .wrap h1 {
   margin-top: 15px;
   margin-bottom: 40px;
+  color: #4d4d4d;
+  max-width: 800px;
+  margin: 0 auto;
 }
-.main .content.intro h2 {
-  margin-top: 40px;
+.main .content.intro .wrap h2 {
+  margin-top: 60px;
   margin-bottom: 40px;
+}
+.main .content.intro .wrap svg {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  opacity: 0.1;
+  width: 94%;
+  height: 200px;
 }
 .main .content:first-child {
   margin-top: 51px;
@@ -634,6 +744,9 @@ form .is-hidden {
 @media only screen and (min-width: 768px) {
   .main .content.contact h2 {
     text-align: center;
+  }
+  .main .content.intro {
+    padding: 100px 0;
   }
 }
 

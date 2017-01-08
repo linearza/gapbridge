@@ -4,7 +4,6 @@
 
   $(function() {
 
-
     // Contact form
     var $contactForm = $('#contact-form'),
       $submitButton = $('#contact-form input[type=submit]');
@@ -39,6 +38,13 @@
           }, 10000);
         }
       });
+    });
+
+
+    // Accordion
+
+    $('.accordion-item').click(function() {
+      $(this).toggleClass('is-open');
     });
 
 

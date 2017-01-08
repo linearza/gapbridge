@@ -1,0 +1,125 @@
+
+
+.accordion{
+  .accordion-item{
+    .accordion-heading{
+      padding: 40px 0px;
+      font-size: 24px;
+      font-weight: 300;
+      border-bottom: 1px solid $white;
+      cursor: pointer;
+      position: relative;
+      .accordion-heading-icon {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-top: -20px;
+        fill: $white;
+        transition: transform 100ms linear;
+      }
+      &:hover, :active{
+        color: $white;
+        opacity: 0.8;
+        .accordion-heading-icon {
+          fill: $grey;
+        }
+      }
+      &:before, &:after{
+        content: '';
+        height: 2px;
+        width: 40px;
+        background: $white;
+        position: absolute;
+        right: 0;
+        top: 50%;
+      }
+      &:after{
+        transform: rotate(90deg);
+        transition: transform 100ms linear;
+      }
+    }
+    .accordion-content{
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 100ms;
+      .accordion-content-wrap{
+        opacity: 0;
+        transition: transform 100ms linear, opacity 100ms linear;
+        transform: translate3d(0px, -20px, 0px);
+        border-bottom: 1px solid $white;
+        padding-bottom: 30px;
+        .section {
+          padding-top: 50px;
+          padding-bottom: 0;
+        }
+      }
+    }
+    &.is-open{
+      .accordion-heading{
+        border-bottom: 0;
+        .accordion-heading-icon {
+          transform: rotate(45deg);
+        }
+        &:after{
+          transform: rotate(0deg);
+        }
+      }
+      .accordion-content{
+        max-height: 100%;
+        .accordion-content-wrap{
+          opacity: 1;
+          transform: translate3d(0px, 0px, 0px);
+          transition: transform 100ms linear, opacity 100ms linear;
+        }
+      }
+    }
+  }
+  &.borders-top{
+    .accordion-item{
+      .accordion-heading{
+        border-top: 1px solid $white;
+        border-bottom: 0;
+      }
+      .accordion-content{
+        .accordion-content-wrap{
+          padding-bottom: 40px;
+        }
+      }
+    }
+  }
+  &.no-first-border{
+    .accordion-item{
+      &:first-child{
+        .accordion-heading{
+          border-top: 0;
+        }
+      }
+    }
+  }
+  &.no-last-border{
+    .accordion-item{
+      &:last-child{
+        .accordion-heading{
+          border-bottom: 0;
+        }
+        .accordion-content{
+          .accordion-content-wrap{
+            border: 0;
+          }
+        }
+      }
+    }
+  }
+  @include respond-to($tablet) {
+    .accordion-item{
+      .accordion-heading{
+        .accordion-heading-icon {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+  }
+}
