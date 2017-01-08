@@ -1,642 +1,85 @@
-.clear:before, .clear:after {
-  content: ' ';
-  display: table;
-}
-
-.clear {
-  *zoom: 1;
-}
-.clear:after {
-  clear: both;
-}
-
-/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
-/* Document
-   ========================================================================== */
-/**
- * 1. Change the default font family in all browsers (opinionated).
- * 2. Correct the line height in all browsers.
- * 3. Prevent adjustments of font size after orientation changes in
- *    IE on Windows Phone and in iOS.
- */
-html {
-  font-family: sans-serif;
-  /* 1 */
-  line-height: 1.15;
-  /* 2 */
-  -ms-text-size-adjust: 100%;
-  /* 3 */
-  -webkit-text-size-adjust: 100%;
-  /* 3 */
-}
-
-/* Sections
-   ========================================================================== */
-/**
- * Remove the margin in all browsers (opinionated).
- */
-body {
-  margin: 0;
-}
-
-/**
- * Add the correct display in IE 9-.
- */
-article,
-aside,
-footer,
-header,
-nav,
-section {
-  display: block;
-}
-
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
-/* Grouping content
-   ========================================================================== */
-/**
- * Add the correct display in IE 9-.
- * 1. Add the correct display in IE.
- */
-figcaption,
-figure,
-main {
-  /* 1 */
-  display: block;
-}
-
-/**
- * Add the correct margin in IE 8.
- */
-figure {
-  margin: 1em 40px;
-}
-
-/**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
-hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
-}
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
-}
-
-/* Text-level semantics
-   ========================================================================== */
-/**
- * 1. Remove the gray background on active links in IE 10.
- * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
- */
-a {
-  background-color: transparent;
-  /* 1 */
-  -webkit-text-decoration-skip: objects;
-  /* 2 */
-}
-
-/**
- * Remove the outline on focused links when they are also active or hovered
- * in all browsers (opinionated).
- */
-a:active,
-a:hover {
-  outline-width: 0;
-}
-
-/**
- * 1. Remove the bottom border in Firefox 39-.
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
- */
-abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
-  text-decoration: underline dotted;
-  /* 2 */
-}
-
-/**
- * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
- */
-b,
-strong {
-  font-weight: inherit;
-}
-
-/**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
-b,
-strong {
-  font-weight: bolder;
-}
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-code,
-kbd,
-samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
-}
-
-/**
- * Add the correct font style in Android 4.3-.
- */
-dfn {
-  font-style: italic;
-}
-
-/**
- * Add the correct background and color in IE 9-.
- */
-mark {
-  background-color: #ff0;
-  color: #000;
-}
-
-/**
- * Add the correct font size in all browsers.
- */
-small {
-  font-size: 80%;
-}
-
-/**
- * Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers.
- */
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
-}
-
-/* Embedded content
-   ========================================================================== */
-/**
- * Add the correct display in IE 9-.
- */
-audio,
-video {
-  display: inline-block;
-}
-
-/**
- * Add the correct display in iOS 4-7.
- */
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-
-/**
- * Remove the border on images inside links in IE 10-.
- */
-img {
-  border-style: none;
-}
-
-/**
- * Hide the overflow in IE.
- */
-svg:not(:root) {
-  overflow: hidden;
-}
-
-/* Forms
-   ========================================================================== */
-/**
- * 1. Change the font styles in all browsers (opinionated).
- * 2. Remove the margin in Firefox and Safari.
- */
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: sans-serif;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
-}
-
-/**
- * Show the overflow in IE.
- * 1. Show the overflow in Edge.
- */
-button,
-input {
-  /* 1 */
-  overflow: visible;
-}
-
-/**
- * Remove the inheritance of text transform in Edge, Firefox, and IE.
- * 1. Remove the inheritance of text transform in Firefox.
- */
-button,
-select {
-  /* 1 */
-  text-transform: none;
-}
-
-/**
- * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
- *    controls in Android 4.
- * 2. Correct the inability to style clickable types in iOS and Safari.
- */
-button,
-html [type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
-  /* 2 */
-}
-
-/**
- * Remove the inner border and padding in Firefox.
- */
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-/**
- * Restore the focus styles unset by the previous rule.
- */
-button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-/**
- * Change the border, margin, and padding in all browsers (opinionated).
- */
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
-}
-
-/**
- * 1. Correct the text wrapping in Edge and IE.
- * 2. Correct the color inheritance from `fieldset` elements in IE.
- * 3. Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in all browsers.
- */
-legend {
-  box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
-}
-
-/**
- * 1. Add the correct display in IE 9-.
- * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
-progress {
-  display: inline-block;
-  /* 1 */
-  vertical-align: baseline;
-  /* 2 */
-}
-
-/**
- * Remove the default vertical scrollbar in IE.
- */
-textarea {
-  overflow: auto;
-}
-
-/**
- * 1. Add the correct box sizing in IE 10-.
- * 2. Remove the padding in IE 10-.
- */
-[type="checkbox"],
-[type="radio"] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
-}
-
-/**
- * Correct the cursor style of increment and decrement buttons in Chrome.
- */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
-
-/**
- * 1. Correct the odd appearance in Chrome and Safari.
- * 2. Correct the outline style in Safari.
- */
-[type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
-}
-
-/**
- * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
- */
-[type="search"]::-webkit-search-cancel-button,
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/**
- * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
- */
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
-}
-
-/* Interactive
-   ========================================================================== */
 /*
- * Add the correct display in IE 9-.
- * 1. Add the correct display in Edge, IE, and Firefox.
- */
-details,
-menu {
-  display: block;
-}
+Error: Invalid CSS after "      border": expected ";", was ": 0;"
+        on line 19 of src/scss/partials/_header.scss
+        from line 24 of src/scss/style.scss
 
-/*
- * Add the correct display in all browsers.
- */
-summary {
-  display: list-item;
-}
+14:     text-align: right;
+15:     .link{
+16:       display: inline-block;
+17:       padding: 16px 0;
+18:       vertical-align: middle
+19:       border: 0;
+20:       i{
+21:         display: none;
+22:         font-style: normal;
+23:       }
+24:     }
 
-/* Scripting
-   ========================================================================== */
-/**
- * Add the correct display in IE 9-.
- */
-canvas {
-  display: inline-block;
-}
-
-/**
- * Add the correct display in IE.
- */
-template {
-  display: none;
-}
-
-/* Hidden
-   ========================================================================== */
-/**
- * Add the correct display in IE 10-.
- */
-[hidden] {
-  display: none;
-}
-
-* {
-  box-sizing: border-box;
-  font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  color: #444;
-}
-
-h1, h2, h3, h4, .logo .title {
-  font-family: 'Cantata One', serif;
-}
-
-.wrap {
-  max-width: 1147px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-a {
-  text-decoration: none;
-  font-weight: 800;
-  color: inherit;
-  display: inline-block;
-  border-bottom: 1px dashed;
-}
-a:hover, a:active {
-  font-weight: 300;
-  border-bottom: 1px solid;
-}
-
-h1, h2, h3, h4 {
-  margin-bottom: 5px;
-}
-
-p {
-  margin-top: 0;
-  line-height: 1.5em;
-}
-
-.logo svg {
-  display: inline-block;
-  vertical-align: middle;
-  max-width: 50px;
-  max-height: 50px;
-}
-.logo .title {
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 20px;
-  color: #6892C7;
-  position: relative;
-  top: 3px;
-}
-.logo .title i {
-  font-style: normal;
-  color: #436DA0;
-}
-
-form input, form textarea {
-  padding: 10px;
-  border-radius: 2px;
-  margin-bottom: 20px;
-  border: 0;
-  font-size: 16px;
-  max-width: 100%;
-  width: 100%;
-}
-form input[type=submit], form textarea[type=submit] {
-  cursor: pointer;
-  background: transparent;
-  color: #ffffff;
-  border: 2px solid #ffffff;
-}
-form input[type=submit]:hover, form input[type=submit]:active, form textarea[type=submit]:hover, form textarea[type=submit]:active {
-  background: rgba(255, 255, 255, 0.2);
-}
-form input[type=submit]:hover:active, form input[type=submit]:active:active, form textarea[type=submit]:hover:active, form textarea[type=submit]:active:active {
-  background: rgba(255, 255, 255, 0.3);
-}
-form input.half, form textarea.half {
-  width: calc(50% - 3px);
-}
-form .alert {
-  padding: 10px 0 20px;
-}
-form .is-hidden {
-  display: none;
-}
-@media only screen and (min-width: 768px) {
-  form {
-    max-width: 400px;
-    margin: 0 auto;
-  }
-}
-
-.header {
-  background: #ffffff;
-  border-bottom: 1px solid #d5d5d5;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-.header .logo {
-  display: inline-block;
-}
-.header .contact-links {
-  display: inline-block;
-  width: calc(100% - 169px);
-  text-align: right;
-}
-.header .contact-links .link {
-  display: inline-block;
-  padding: 16px 0;
-  vertical-align: middle;
-  border: 0;
-}
-.header .contact-links .link i {
-  display: none;
-  font-style: normal;
-}
-@media only screen and (min-width: 768px) {
-  .header .contact-links .link i {
-    display: inline;
-  }
-}
-
-.nav ul {
-  list-style: none;
-}
-
-.content {
-  padding: 20px 0;
-}
-.main .content h2 {
-  margin-top: 10px;
-  margin-bottom: 30px;
-}
-.main .content:first-child {
-  margin-top: 51px;
-}
-.main .content:nth-child(2) {
-  background: #EF4747;
-  color: #ffffff;
-}
-.main .content:nth-child(4) {
-  background: #FFAF00;
-  color: #ffffff;
-}
-.main .content:nth-child(6) {
-  background: #06AC06;
-  color: #ffffff;
-}
-@media only screen and (min-width: 768px) {
-  .main .content.contact h2 {
-    text-align: center;
-  }
-}
-
-.footer {
-  background: #2f4d71;
-  color: #ffffff;
-  font-size: 14px;
-  padding: 40px 0 5px;
-}
-
-.copyright {
-  background: #253c58;
-  padding: 10px;
-  font-size: 10px;
-  color: #ffffff;
-}
-
-/*# sourceMappingURL=style.unprefixed.css.map */
+Backtrace:
+src/scss/partials/_header.scss:19
+src/scss/style.scss:24
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:1161:in `expected'
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:1097:in `expected'
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:1092:in `tok!'
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:757:in `block in try_declaration'
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:1137:in `rethrow'
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:762:in `try_declaration'
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:692:in `declaration_or_ruleset'
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:657:in `block_child'
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:649:in `block_contents'
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:638:in `block'
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:707:in `declaration_or_ruleset'
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:657:in `block_child'
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:649:in `block_contents'
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:638:in `block'
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:707:in `declaration_or_ruleset'
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:657:in `block_child'
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:649:in `block_contents'
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:638:in `block'
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:631:in `ruleset'
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:656:in `block_child'
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:646:in `block_contents'
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:117:in `stylesheet'
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/lib/sass/scss/parser.rb:42:in `parse'
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/lib/sass/engine.rb:403:in `_to_tree'
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/lib/sass/engine.rb:309:in `to_tree'
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:324:in `block in visit_import'
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/lib/sass/stack.rb:88:in `block in with_import'
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/lib/sass/stack.rb:115:in `with_frame'
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/lib/sass/stack.rb:88:in `with_import'
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:323:in `visit_import'
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/lib/sass/stack.rb:79:in `block in with_base'
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/lib/sass/stack.rb:115:in `with_frame'
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/lib/sass/stack.rb:79:in `with_base'
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/lib/sass/engine.rb:378:in `_render_with_sourcemap'
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/lib/sass/engine.rb:295:in `render_with_sourcemap'
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/lib/sass/exec/sass_scss.rb:412:in `run'
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/lib/sass/exec/base.rb:52:in `parse'
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/lib/sass/exec/base.rb:19:in `parse!'
+/Users/michiel/.rvm/gems/ruby-2.3.1/gems/sass-3.4.19/bin/sass:13:in `<top (required)>'
+/Users/michiel/.rvm/gems/ruby-2.3.1/bin/sass:23:in `load'
+/Users/michiel/.rvm/gems/ruby-2.3.1/bin/sass:23:in `<main>'
+/Users/michiel/.rvm/gems/ruby-2.3.1/bin/ruby_executable_hooks:15:in `eval'
+/Users/michiel/.rvm/gems/ruby-2.3.1/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"      border\": expected \";\", was \": 0;\"\A         on line 19 of src/scss/partials/_header.scss\A         from line 24 of src/scss/style.scss\A \A 14:     text-align: right;\A 15:     .link{\A 16:       display: inline-block;\A 17:       padding: 16px 0;\A 18:       vertical-align: middle\A 19:       border: 0;\A 20:       i{\A 21:         display: none;\A 22:         font-style: normal;\A 23:       }\A 24:     }"; }
