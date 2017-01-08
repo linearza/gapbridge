@@ -9,12 +9,6 @@
 @import 'base/_base';
 
 
-//----------------------------------*\
-// CONFIG MODULES
-//----------------------------------*/
-
-// Config modules
-
 @import 'modules/_buttons.scss';
 
 
@@ -28,20 +22,3 @@
 @import 'partials/_sidebar.scss';
 @import 'partials/_main.scss';
 @import 'partials/_footer.scss';
-
-//----------------------------------*\
-// OBJECTS & MODULES
-//----------------------------------*/
-
-
-
-
-// Enhancement modules
-@import 'modules/_breakpoints.scss';
-@import 'modules/_print.scss';
-
-//----------------------------------*\
-// VENDOR
-//----------------------------------*/
-
-@import 'vendor/_external.scss';
