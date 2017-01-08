@@ -498,6 +498,7 @@ a:hover, a:active {
 
 h1, h2, h3, h4 {
   margin-bottom: 5px;
+  line-height: 1.5;
 }
 
 p {
@@ -589,15 +590,9 @@ form .is-hidden {
   display: none;
   font-style: normal;
 }
-.header .contact-links .link i.mobile {
-  display: inline;
-}
 @media only screen and (min-width: 768px) {
   .header .contact-links .link i {
     display: inline;
-  }
-  .header .contact-links .link i.mobile {
-    display: none;
   }
 }
 
@@ -611,6 +606,17 @@ form .is-hidden {
 .main .content h2 {
   margin-top: 10px;
   margin-bottom: 30px;
+}
+.main .content.intro {
+  text-align: center;
+}
+.main .content.intro h1 {
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+.main .content.intro h2 {
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 .main .content:first-child {
   margin-top: 51px;
