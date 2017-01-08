@@ -7,7 +7,46 @@ html {
   font-size: 62.5%;
 }
 body {
-  font: 300 13px/1.6 'Helvetica Neue', Helvetica, Arial;
-  background: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
   color: #444;
+}
+
+%openSans {
+  font-family: 'Open Sans', sans-serif;
+}
+
+%cantataOne {
+  font-family: 'Cantata One', serif;
+}
+
+
+.wrap{
+  max-width: 1147px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+a {
+  // color: $blue;
+  text-decoration: none;
+  font-weight: 800;
+  color: inherit;
+  display: inline-block;
+  border-bottom: 1px dashed;
+  &:hover, &:active{
+    // color: darken($blue, 15%);
+    font-weight: 300;
+    border-bottom: 1px solid;
+  }
+}
+
+h1, h2, h3, h4{
+  @extend %cantataOne;
+  margin-bottom: 5px;
+}
+
+p {
+  margin-top: 0;
+  line-height: 1.5em;
 }

@@ -1,0 +1,21 @@
+.content {
+  padding: 20px 0;
+  // border-bottom: 1px solid lighten($grey, 30%);
+  .main & {
+    &:first-child{
+      margin-top: 51px;
+    }
+    &:nth-child(2){
+      background: $red;
+      color: $white;
+    }
+    &:nth-child(4){
+      background: $orange;
+      color: $white;
+    }
+    &:nth-child(6){
+      background: $green;
+      color: $white;
+    }
+  }
+}

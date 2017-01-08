@@ -1,0 +1,8 @@
+// mainly used in respond-to mixin
+$mobile: 440;
+$tablet: 768;
+$desktop: 1147;
+
+@mixin respond-to($breakpoint) {
+    @media only screen and (min-width: $breakpoint + px) { @content; }
+}

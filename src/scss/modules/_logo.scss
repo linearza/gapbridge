@@ -1,0 +1,19 @@
+.logo{
+  svg {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 50px;
+    max-height: 50px;
+  }
+  .title{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+    @extend %cantataOne;
+    color: $blue;
+    i {
+      font-style: normal;
+      color: $blue-dark;
+    }
+  }
+}

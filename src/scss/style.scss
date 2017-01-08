@@ -2,14 +2,17 @@
 // SCSS MIXINS
 //----------------------------------*/
 
-@import 'mixins/_clearfix.scss';
+@import 'mixins/_clearfix';
+@import 'mixins/_respond-to';
 
 // Base
 @import 'base/_normalize';
+@import 'base/_colors';
 @import 'base/_base';
 
 
-@import 'modules/_buttons.scss';
+@import 'modules/_buttons';
+@import 'modules/_logo';
 
 
 
@@ -17,8 +20,8 @@
 // PARTIALS
 //----------------------------------*/
 
-@import 'partials/_header.scss';
-@import 'partials/_nav.scss';
-@import 'partials/_sidebar.scss';
-@import 'partials/_main.scss';
-@import 'partials/_footer.scss';
+@import 'partials/_header';
+@import 'partials/_nav';
+@import 'partials/_sidebar';
+@import 'partials/_content';
+@import 'partials/_footer';

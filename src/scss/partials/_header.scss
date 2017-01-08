@@ -1,8 +1,35 @@
 .header {
-
-}
-.logo {
-  img {
-
+  background: $white;
+  border-bottom: 1px solid lighten($grey, 30%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  .logo{
+    display: inline-block;
+  }
+  .contact-links{
+    display: inline-block;
+    width: calc(100% - 169px);
+    text-align: right;
+    .link{
+      display: inline-block;
+      padding: 16px 0;
+      vertical-align: middle;
+      border: 0;
+      i{
+        display: none;
+        font-style: normal;
+      }
+    }
+  }
+  @include respond-to($tablet) {
+    .contact-links{
+      .link{
+        i {
+          display: inline;
+        }
+      }
+    }
   }
 }
