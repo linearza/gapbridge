@@ -581,12 +581,14 @@ p {
   background: #436DA0;
   color: #ffffff;
   font-size: 14px;
-  padding: 20px 0 0;
+  padding: 20px 0 5px;
 }
-.footer .copyright {
+
+.copyright {
   background: #253c58;
   padding: 10px;
   font-size: 10px;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=style.unprefixed.css.map */

@@ -2,10 +2,12 @@
   background: $blue-dark;
   color: $white;
   font-size: 14px;
-  padding: 20px 0 0;
-  .copyright{
-    background: darken($blue-dark, 20%);
-    padding: 10px;
-    font-size: 10px;
-  }
+  padding: 20px 0 5px;
+}
+
+.copyright{
+  background: darken($blue-dark, 20%);
+  padding: 10px;
+  font-size: 10px;
+  color: $white;
 }
