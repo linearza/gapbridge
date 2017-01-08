@@ -589,9 +589,15 @@ form .is-hidden {
   display: none;
   font-style: normal;
 }
+.header .contact-links .link i.mobile {
+  display: inline;
+}
 @media only screen and (min-width: 768px) {
   .header .contact-links .link i {
     display: inline;
+  }
+  .header .contact-links .link i.mobile {
+    display: none;
   }
 }
 
