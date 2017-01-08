@@ -1,8 +1,8 @@
 .footer {
-  background: $blue-dark;
+  background: darken($blue-dark, 13%);
   color: $white;
   font-size: 14px;
-  padding: 20px 0 5px;
+  padding: 40px 0 5px;
 }
 
 .copyright{

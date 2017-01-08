@@ -11,6 +11,8 @@
     font-size: 20px;
     @extend %cantataOne;
     color: $blue;
+    position: relative;
+    top: 3px;
     i {
       font-style: normal;
       color: $blue-dark;
