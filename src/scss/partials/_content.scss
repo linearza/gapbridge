@@ -39,21 +39,24 @@
     &:nth-child(2){
       background: $red;
       color: $white;
+      border-top: 5px solid lighten($red, 20%);
+      border-bottom: 6px solid darken($red, 10%);
+      padding: 0;
     }
     &:nth-child(4){
       background: $orange;
       color: $white;
+      border-top: 5px solid lighten($orange, 20%);
+      border-bottom: 6px solid darken($orange, 5%);
     }
     &:nth-child(6){
       background: $green;
       color: $white;
+      border-top: 5px solid lighten($green, 10%);
+      border-bottom: 6px solid darken($green, 8%);
     }
     @include respond-to($tablet) {
-      &.contact{
-        h2{
-          text-align: center;
-        }
-      }
+      &.contact{}
       &.intro {
         padding: 100px 0;
       }
