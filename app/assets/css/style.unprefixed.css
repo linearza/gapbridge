@@ -497,7 +497,7 @@ a:hover, a:active {
 }
 
 h1, h2, h3, h4 {
-  margin-bottom: 5px;
+  margin-bottom: 0.6em;
   line-height: 1.5;
 }
 
@@ -706,7 +706,6 @@ form .is-hidden {
 }
 .main .content h2 {
   margin-top: 10px;
-  margin-bottom: 30px;
 }
 .main .content.intro {
   text-align: center;
@@ -741,7 +740,6 @@ form .is-hidden {
   color: #ffffff;
   border-top: 5px solid #f7a5a5;
   border-bottom: 6px solid #eb1818;
-  padding: 0;
 }
 .main .content:nth-child(4) {
   background: #FFAF00;

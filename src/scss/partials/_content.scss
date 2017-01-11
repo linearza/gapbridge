@@ -4,7 +4,6 @@
   .main & {
     h2 {
       margin-top: 10px;
-      margin-bottom: 30px;
     }
     &.intro{
       text-align: center;
@@ -41,7 +40,6 @@
       color: $white;
       border-top: 5px solid lighten($red, 20%);
       border-bottom: 6px solid darken($red, 10%);
-      padding: 0;
     }
     &:nth-child(4){
       background: $orange;
