@@ -472,9 +472,10 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   color: #444;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
-h1, h2, h3, h4, .logo .title {
+h1, h2, h3, h4, .logo .title, .logo .tagline {
   font-family: 'Cantata One', serif;
 }
 
@@ -506,6 +507,9 @@ p {
   line-height: 1.5em;
 }
 
+.logo {
+  position: relative;
+}
 .logo svg {
   display: inline-block;
   vertical-align: middle;
@@ -519,11 +523,29 @@ p {
   font-weight: 700;
   color: #6892C7;
   position: relative;
-  top: 3px;
+  top: -6px;
 }
 .logo .title i {
   font-style: normal;
   color: #436DA0;
+}
+.logo .tagline {
+  font-size: 9px;
+  position: absolute;
+  left: 55px;
+  top: 33px;
+  color: #888;
+  font-weight: 300;
+  white-space: nowrap;
+}
+@media only screen and (min-width: 768px) {
+  .logo .title {
+    top: 3px;
+  }
+  .logo .tagline {
+    left: 171px;
+    top: 25px;
+  }
 }
 
 form input, form textarea {
@@ -569,8 +591,8 @@ form .is-hidden {
   user-select: none;
 }
 .accordion .accordion-item .accordion-heading {
-  padding: 40px 0px;
-  font-size: 24px;
+  padding: 23px 0px;
+  font-size: 20px;
   font-weight: 300;
   border-bottom: 1px solid #ffffff;
   cursor: pointer;
@@ -596,7 +618,7 @@ form .is-hidden {
 .accordion .accordion-item .accordion-heading:before, .accordion .accordion-item .accordion-heading:after {
   content: '';
   height: 2px;
-  width: 40px;
+  width: 30px;
   background: #ffffff;
   position: absolute;
   right: 0;
