@@ -1,0 +1,23 @@
+.testimonial{
+  margin-bottom: 30px;
+  padding: 0 10px;
+  quote{
+    @extend %cantataOne;
+    font-size: 16px;
+    line-height: 1.5em;
+    font-weight: 300;
+    margin-bottom: 10px;
+    display: block;
+  }
+  span{
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  @include respond-to($tablet){
+    width: 32.5%;
+    display: inline-block;
+    vertical-align: top;
+  }
+}

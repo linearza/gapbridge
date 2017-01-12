@@ -12,8 +12,9 @@ form{
       cursor: pointer;
       background: transparent;
       color: $white;
-      background: darken($green, 5%);
-      border: 2px solid $green;
+      background: $green;
+      border-top: 3px solid lighten($green, 10%);
+      border-bottom: 3px solid darken($green, 10%);
       outline: 0;
       &:hover, &:active{
         background: rgba($green, 0.9);

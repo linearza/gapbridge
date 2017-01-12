@@ -1,11 +1,8 @@
-
-
 .accordion{
-  // margin: -20px 0;
   .accordion-item{
     user-select: none;
     .accordion-heading{
-      padding: 23px 0px;
+      padding: 23px 32px 23px 0;
       font-size: 20px;
       font-weight: 300;
       border-bottom: 1px solid $white;
