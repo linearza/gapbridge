@@ -53,8 +53,27 @@
       border-top: 5px solid lighten($green, 10%);
       border-bottom: 6px solid darken($green, 8%);
     }
+    &.contact{
+      .get-in-touch{
+        margin-top: 30px;
+        padding-bottom: 50px;
+        .link{
+        }
+      }
+    }
     @include respond-to($tablet) {
-      &.contact{}
+      &.contact{
+        .get-in-touch{
+          width: calc(100% - 430px);
+          display: inline-block;
+          vertical-align: top;
+          margin-top: 0px;
+          padding-left: 70px;
+          h3 {
+            margin-top: 0;
+          }
+        }
+      }
       &.intro {
         padding: 100px 0;
       }

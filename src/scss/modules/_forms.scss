@@ -35,6 +35,7 @@ form{
   }
   @include respond-to($tablet) {
     max-width: 400px;
+    display: inline-block;
     // margin: 0 auto;
   }
 }
