@@ -23,9 +23,9 @@
   .tagline{
     font-size: 9px;
     position: absolute;
-    left: 55px;
+    left: 61px;
     top: 33px;
-    color: $grey;
+    color: darken($grey, 10%);
     @extend %cantataOne;
     font-weight: 300;
     white-space: nowrap;
@@ -35,8 +35,10 @@
       top: 3px;
     }
     .tagline{
-      left: 171px;
+      left: 176px;
       top: 25px;
+      border-left: 1px solid $black;
+      padding-left: 5px;
     }
   }
 }

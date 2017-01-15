@@ -48,10 +48,10 @@
       border-bottom: 6px solid darken($orange, 5%);
     }
     &:nth-child(6){
-      background: $green;
+      background: darken($green, 10%);
       color: $white;
-      border-top: 5px solid lighten($green, 10%);
-      border-bottom: 6px solid darken($green, 8%);
+      border-top: 5px solid lighten($green, 0%);
+      border-bottom: 6px solid darken($green, 15%);
     }
     &.contact{
       .get-in-touch{

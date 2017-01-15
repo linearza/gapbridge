@@ -35,6 +35,10 @@ a {
   color: inherit;
   display: inline-block;
   border-bottom: 1px dashed;
+  svg{
+    vertical-align: middle;
+    margin-right: 5px;
+  }
   &:hover, &:active{
     // color: darken($blue, 15%);
     font-weight: 300;

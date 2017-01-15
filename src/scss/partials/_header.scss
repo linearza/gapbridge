@@ -13,24 +13,36 @@
   }
   .contact-links{
     display: inline-block;
-    width: calc(100% - 169px);
+    width: calc(100% - 175px);
     text-align: right;
+    position: relative;
+    right: -10px;
     .link{
       display: inline-block;
-      padding: 16px 0;
+      padding: 10px 5px;
       vertical-align: middle;
       border: 0;
-      i{
+      span {
         display: none;
+      }
+      i{
+        display: inline-block;
         font-style: normal;
+        svg{
+          fill: $blue-dark;
+          vertical-align: middle;
+        }
       }
     }
   }
   @include respond-to($tablet) {
     .contact-links{
+      right: 0;
       .link{
-        i {
+        span {
           display: inline;
+          vertical-align: middle;
+          font-size: 12px;
         }
       }
     }
