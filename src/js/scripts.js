@@ -10,7 +10,7 @@
     $contactForm.submit(function(e) {
       e.preventDefault();
       $.ajax({
-        url: '//formspree.io/vanwijk.mc@gmail.com',
+        url: '//formspree.io/hello@gapbridge.co.za',
         method: 'POST',
         data: $(this).serialize(),
         dataType: 'json',
@@ -21,7 +21,7 @@
         },
         success: function() {
           // $contactForm.find('.alert.sending').remove();
-          $submitButton.before('<div class="alert sent">Thank you, we will be in contact shortly.</div>');
+          $submitButton.before('<div class="alert sent">Thank you, we will be in contact shortly!</div>');
           $submitButton.val('Message sent!');
           $submitButton.prop('disabled', false);
           setTimeout(function() {
